@@ -1,623 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.104.2" />
-    <title>ASCE-UAGRM</title>
+    <title>ASCE - UAGRM</title>
 
-    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
+    <!-- <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
         display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f5f5f5;
       }
-    </style>
 
-    <!-- Custom styles for this template -->
-    <link href="/css/carousel.css" rel="stylesheet" />
-    <link href="/css/carousel.rtl.css" rel="stylesheet" />
+      .container {
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        width: 8.5in;
+        height: 11in;
+        max-width: 100%;
+        max-height: 100%;
+        box-sizing: border-box;
+      }
+    </style> -->
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">ASCE-UAGRM</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <div class="container-fluid bg-dark">
+      <h1 class="visually-hidden">Headers examples</h1>
+
+      <div class="container">
+        <header
+          class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <!-- Home -->
-
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-
-              <!-- ConcejoDirectivo -->
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="#ConcejoDirectivo"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Concejo Directivo</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="#members-asce"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Miembros</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">Sobre Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">Contactos</a>
-              </li>
-            </ul>
-            <!-- <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form> -->
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap" />
             </svg>
+            <span class="fs-4 text-light">ASCE - UAGRM</span>
+          </a>
 
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Asociación de Sociedades Científicas de Estudiantes</h1>
-                <p>
-                  De la Universidad Autónoma Gabriel René Moreno - Santa Cruz de
-                  la Sierra - Bolivia
-                </p>
-                <!-- <p>
-                  <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-                </p> -->
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
-                </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-        <div id="ConcejoDirectivo"></div>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </header>
       </div>
-
-      <!-- Marketing messaging and featurettes
-  ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing">
-        <!-- Three columns of text below the carousel -->
-        <!-- <div class="row text-center">
-          <hr class="featurette-divider" id="ConcejoDirectivo" />
-          <h1>Concejo Directivo</h1>
-        </div> -->
-        <div class="row mb-5">
-          <h2 class="featurette-heading fw-normal lh-1 text-center mt-0">
-            Concejo Directivo de la
-            <span class="text-muted"> ASCE-UAGRM</span>
-          </h2>
-        </div>
-
-        <!-- aplica dos hr sin stilos -->
-
-        <div class="row">
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-
-            <h2 class="fw-normal">Heading</h2>
-            <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-
-            <h2 class="fw-normal">Heading</h2>
-            <p>
-              Another exciting bit of representative placeholder content. This
-              time, we've moved on to the second column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-
-            <h2 class="fw-normal">Heading</h2>
-            <p>
-              And lastly this, the third column of representative placeholder
-              content.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider" id="members-asce" />
-
-        <div class="row">
-          <h2 class="featurette-heading fw-normal lh-1 text-center mt-0">
-            Miembros de la
-            <span class="text-muted"> ASCE-UAGRM</span>
-          </h2>
-        </div>
-
-        <br />
-        <br />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1 fs-2">
-              SOCIEFARBIO
-              <span class="text-muted"> - FCFB</span>
-            </h2>
-            <p class="lead">
-              Sociedad Científica de Estudiantes de Farmacia y Bioquímica de la
-              Facultad de Ciencias Farmacéuticas y Bioquímicas.
-            </p>
-
-            <p>
-              Socio fundador - <span class="text-success fw-bold">Activo</span>
-            </p>
-
-            <a
-              href="https://www.facebook.com/SOCIEFARBIO"
-              class="btn btn-primary"
-              target="_blank"
-              >Visitar página de Facebook</a
-            >
-          </div>
-          <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1 fs-2">
-              SCEFH
-              <span class="text-muted"> - FH</span>
-            </h2>
-            <p class="lead">
-              Sociedad Científica de Estudiantes de la Facultad de Humanidades.
-            </p>
-
-            <p>
-              Socio Titular - <span class="text-success fw-bold">Activo</span>
-            </p>
-
-            <a
-              href="https://www.facebook.com/sociedadcientificadeestudiantesdehumanidades"
-              class="btn btn-primary"
-              target="_blank"
-              >Visitar página de Facebook</a
-            >
-          </div>
-
-          <div class="col-md-5 order-md-1">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1 fs-2">
-              SCEFCEYT
-              <span class="text-muted"> - FCET</span>
-            </h2>
-            <p class="lead">
-              Sociedad Científica de Estudiantes de la Facultad de Ciencias
-              Exactas y Tecnología.
-            </p>
-
-            <p>
-              Socio Titular - <span class="text-success fw-bold">Activo</span>
-            </p>
-
-            <a
-              href="https://www.facebook.com/profile.php?id=100050853853879"
-              class="btn btn-primary"
-              target="_blank"
-              >Visitar página de Facebook</a
-            >
-          </div>
-
-          <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1 fs-2">
-              SCERIS -
-              <span class="text-muted">FICCT</span>
-            </h2>
-            <p class="lead">
-              Sociedad Científica de Estudiantes de Ing. en Redes y
-              telecomunicaciones, Ing. en Informática e Ing. en Sistemas de la
-              Facultad de Ingeniería en Ciencias de la Computación y
-              Telecomunicaciones.
-            </p>
-
-            <p>
-              Socio fundador - <span class="text-warning fw-bold">Pasivo</span>
-            </p>
-            <a
-              href="https://www.facebook.com/SCERIS.FICCT"
-              class="btn btn-primary"
-              target="_blank"
-              >Visitar página de Facebook</a
-            >
-          </div>
-          <div class="col-md-5 order-md-1">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              And lastly, this one. <span class="text-muted">Checkmate.</span>
-            </h2>
-            <p class="lead">
-              And yes, this is the last block of representative placeholder
-              content. Again, not really intended to be actually read, simply
-              here to give you a better view of what this would look like with
-              some actual content. Your content.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
-          </div>
-        </div>
-
-        <!-- <hr class="featurette-divider" /> -->
-
-        <!-- /END THE FEATURETTES -->
-      </div>
-      <!-- /.container -->
-
-      <!-- FOOTER -->
-    </main>
-
-    <br />
-
-    <div class="container-fluid">
-      <footer class="bg-dark text-white py-5">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-md-4">
-              <a href="/" class="mb-3 mb-md-0 text-muted text-decoration-none">
-                <svg class="bi" width="30" height="24">
-                  <use xlink:href="#bootstrap"></use>
-                </svg>
-              </a>
-              <span class="d-block text-muted">© 2023 ASCE-UAGRM</span>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-md-12 text-center">
-              <p class="mb-0 text-muted">
-                Desarrollado por
-                <a
-                  href="https://github.com/Miguel-Ike"
-                  class="text-white text-decoration-none"
-                  target="_blank"
-                  >Miguel-Ike</a
-                >
-                &copy; 2023
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
 
-    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container-fluid">
+      <div class="container">
+        <h1>test</h1>
+      </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
